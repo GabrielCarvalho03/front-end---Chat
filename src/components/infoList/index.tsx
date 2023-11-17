@@ -41,7 +41,6 @@ export type ChatRomType = {
 export default function InfoList() {
     const loggedUser = JSON.parse(localStorage.getItem('logged') ?? '')
     const setUserSelected = useChatUser(state => state.setUserInfo)
-    const idChatRom = useChatUser(state => state.idChatRom)
     const setIdChatRom = useChatUser(state => state.setIdChatRom)
     const setAllMessages = useChatUser(state => state.setAllMessages)
     const [users, setUsers] = useState<DataType[]>([])

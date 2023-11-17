@@ -21,7 +21,6 @@ export const ModalOfAddUser = ({ setModalUser, }: ModalProps) => {
     // const loggedUser = JSON.parse(localStorage.getItem('logged') ?? '')
     const setUserSelected = useChatUser(state => state.setUserInfo)
     const setIdChatRom = useChatUser(state => state.setIdChatRom)
-    const IdChatRom = useChatUser(state => state.idChatRom)
     const setAllMessages = useChatUser(state => state.setAllMessages)
 
     const [allUser, setAllUser] = useState<DataType[]>([])
@@ -31,7 +30,7 @@ export const ModalOfAddUser = ({ setModalUser, }: ModalProps) => {
 
     type DataSchema = z.infer<typeof Schema>
 
-    const { register, handleSubmit, formState: { errors } } = useForm<DataSchema>({
+    const { register, handleSubmit,  } = useForm<DataSchema>({
         mode: 'all',
         resolver: zodResolver(Schema)
     })
