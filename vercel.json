@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/socket.io/(.*)",
+        "dest": "https://back-end-chat-socket-production.up.railway.app/socket.io/$1",
+        "methods": ["GET", "POST"],
+        "headers": {
+          "Access-Control-Allow-Origin": "*"
+        }
+      }
+    ]
+  }
