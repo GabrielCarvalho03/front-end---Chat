@@ -29,10 +29,10 @@ Inicie a aplicação de desenvolvimento: yarn dev
 # Como Usar 🚀
 
 Instale as dependências:
-![image](https://github.com/GabrielCarvalho03/front-end---Chat/assets/87819769/da1f408f-472e-418d-92bc-8de115958512)
+npm install
 
 Inicie a aplicação de desenvolvimento:
-![image](https://github.com/GabrielCarvalho03/front-end---Chat/assets/87819769/40dd173d-5723-4d9c-830b-2a2901a898bf)
+npm run dev
 
 Abra o navegador e vá para http://localhost:3000.
 
