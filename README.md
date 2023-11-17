@@ -1,27 +1,50 @@
-# React + TypeScript + Vite
+# Chat em Tempo Real com Vite 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao Chat em Tempo Real usando Vite! Este projeto é uma aplicação simples de chat que utiliza Vite para desenvolvimento rápido e Socket.IO para comunicação em tempo real.
 
-Currently, two official plugins are available:
+![photo_5098491630985522104_w](https://github.com/GabrielCarvalho03/front-end---Chat/assets/87819769/7e0185db-b8c8-485f-a30a-13b3566f7754)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+![photo_5098253659732552610_y](https://github.com/GabrielCarvalho03/front-end---Chat/assets/87819769/dd2f3600-40bf-4b99-90da-a999ff99e1d8)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Pré-requisitos
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js: [https://nodejs.org/](https://nodejs.org/)
+- npm (ou yarn): [https://www.npmjs.com/](https://www.npmjs.com/) ou [https://yarnpkg.com/](https://yarnpkg.com/)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Instalação
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/chat-em-tempo-real-com-vite.git 
+
+Navegue até o diretório do projeto: cd chat-em-tempo-real-com-vite
+
+Instale as dependências: 
+
+npm install
+
+Inicie a aplicação de desenvolvimento: 
+
+yarn dev
+
+
+# Como Usar 🚀
+
+Instale as dependências:
+npm install
+
+Inicie a aplicação de desenvolvimento:
+npm run dev
+
+Abra o navegador e vá para http://localhost:3000.
+
+
+# Recursos ⛏
+Vite: https://vitejs.dev/
+Socket.IO: https://socket.io/
+Contribuindo
+Fique à vontade para abrir um problema ou enviar um pull request. Estamos ansiosos para receber suas contribuições!
+
+
