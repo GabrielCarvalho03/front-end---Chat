@@ -19,7 +19,7 @@ export default function Footer(){
     })
     type MessageData = z.infer<typeof Schema>
 
-    const {register , handleSubmit, formState:{errors}, reset } = useForm<MessageData>({
+    const {register , handleSubmit, reset } = useForm<MessageData>({
         mode: 'onBlur',
         resolver : zodResolver(Schema)
     })

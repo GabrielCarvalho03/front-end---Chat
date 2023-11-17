@@ -26,11 +26,11 @@ type useChatUserType =  {
 const useChatUser = create<useChatUserType>((set) =>{
     return{
         userInfo: [],
-        setUserInfo:(item) => set((state) => ({userInfo: [ item]})), 
+        setUserInfo:(item) => set(() => ({userInfo: [ item]})), 
         idChatRom:"", 
-        setIdChatRom : (item) => set((state) => ({idChatRom: item})), 
+        setIdChatRom : (item) => set(() => ({idChatRom: item})), 
         allMessages : [], 
-        setAllMessages : (item : allMessagesProps[]) => set((state) => ({allMessages: [...item]})), 
+        setAllMessages : (item : allMessagesProps[]) => set(() => ({allMessages: [...item]})), 
     }
 })
 

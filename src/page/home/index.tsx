@@ -2,7 +2,6 @@ import { useState} from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
-import { io } from 'socket.io-client'
 import Chat from '../chat'
 import { socket } from '../../services/socket'
 
