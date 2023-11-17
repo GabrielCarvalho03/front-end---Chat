@@ -17,13 +17,17 @@ Bem-vindo ao Chat em Tempo Real usando Vite! Este projeto é uma aplicação sim
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/chat-em-tempo-real-com-vite.git
+   git clone https://github.com/seu-usuario/chat-em-tempo-real-com-vite.git 
 
 Navegue até o diretório do projeto: cd chat-em-tempo-real-com-vite
 
-Instale as dependências: npm install
+Instale as dependências: 
 
-Inicie a aplicação de desenvolvimento: yarn dev
+npm install
+
+Inicie a aplicação de desenvolvimento: 
+
+yarn dev
 
 
 # Como Usar 🚀
