@@ -66,6 +66,7 @@ export const ModalOfAddUser = ({ setModalUser, }: ModalProps) => {
 
         })
         setUserSelected({ name: item.name, photo: item.photo })
+        setModalUser(false)
     }
 
 
@@ -94,7 +95,8 @@ export const ModalOfAddUser = ({ setModalUser, }: ModalProps) => {
                         className="w-full  h-10 p-5  rounded-md outline-none border-0.5 border-gray-400" type="text"
                         placeholder="Pesquisar por nome"
                     />
-
+                        
+                     
                     <button
                         type='submit'
                         className="ml-10 w-20 h-10 bg-primary rounded-md flex justify-center items-center">
@@ -117,7 +119,11 @@ export const ModalOfAddUser = ({ setModalUser, }: ModalProps) => {
                             </div>
 
                             <div>
-                                <img className=' w-10 cursor-pointer'  src={messaIcon} alt="" />
+                            <button
+                        type='submit'
+                        className="ml-10 w-20 h-10 bg-primary rounded-md flex justify-center items-center">
+                        <img src={sendIcon} />
+                    </button>
                             </div>
 
 
@@ -125,7 +131,11 @@ export const ModalOfAddUser = ({ setModalUser, }: ModalProps) => {
                     )
                 })}
             </div>
-
+            {!allUser.length && 
+            <div className='w-full flex flex-col  items-center mt-5'>
+                <h3 className=' text-gray-600'>procure um usuário que deseja adicionar</h3>
+            </div>
+                        }
         </Modal>
     )
 }

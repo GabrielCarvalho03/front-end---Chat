@@ -43,6 +43,7 @@ export default function InfoList() {
     const setUserSelected = useChatUser(state => state.setUserInfo)
     const setIdChatRom = useChatUser(state => state.setIdChatRom)
     const setAllMessages = useChatUser(state => state.setAllMessages)
+    const setUserProfile = useChatUser(state => state.setUserProfile)
     const [users, setUsers] = useState<DataType[]>([])
     const[modalUser , setModalUser] = useState(false)
 
@@ -134,6 +135,7 @@ export default function InfoList() {
 
                 <div>
                     <div
+                     onClick={() => setUserProfile(true)}
                         className=" absolute bottom-0 flex items-center gap-5  bg-white border-b-0.5 bobder-b-gray-400 cursor-pointer px-4">
                         <img
                             src={loggedUser.photo}

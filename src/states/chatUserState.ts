@@ -20,7 +20,9 @@ type useChatUserType =  {
     idChatRom:string, 
     setIdChatRom : (item:string) => void, 
     allMessages : allMessagesProps[], 
-    setAllMessages : (item : allMessagesProps[]) => void
+    setAllMessages : (item : allMessagesProps[]) => void, 
+    userProfile: boolean, 
+    setUserProfile : (item: boolean) => void
 }
 
 const useChatUser = create<useChatUserType>((set) =>{
@@ -31,6 +33,8 @@ const useChatUser = create<useChatUserType>((set) =>{
         setIdChatRom : (item) => set(() => ({idChatRom: item})), 
         allMessages : [], 
         setAllMessages : (item : allMessagesProps[]) => set(() => ({allMessages: [...item]})), 
+        userProfile: false, 
+        setUserProfile : (item: boolean) => set(()=> ({userProfile: item}))
     }
 })
 
