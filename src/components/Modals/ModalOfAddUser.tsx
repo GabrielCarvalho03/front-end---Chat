@@ -9,7 +9,6 @@ import { socket } from '../../services/socket'
 import { ChatRomType, DataType } from '../infoList'
 
 
-import messaIcon from '../../assets/messageIcon.svg'
 import { useChatUser } from '../../states/chatUserState'
 
 type ModalProps = {
